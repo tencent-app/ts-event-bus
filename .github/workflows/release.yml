@@ -37,7 +37,7 @@ jobs:
       run: npm ci
 
     - name: Run release-it
-      run: npx release-it --ci --increment=patch --npm.skipChecks --npm.publishArgs="--access public" --github.release=false
+      run: npx release-it --ci --increment=patch
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

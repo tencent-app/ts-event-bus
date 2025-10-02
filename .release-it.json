@@ -9,10 +9,12 @@
   },
   "npm": {
     "publish": true,
-    "publishPath": "."
+    "publishPath": ".",
+    "publishArgs": ["--access", "public"]
   },
   "github": {
-    "release": false
+    "release": false,
+    "skipChecks": true
   },
   "plugins": {}
 }
